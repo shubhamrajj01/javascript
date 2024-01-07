@@ -48,7 +48,12 @@ else{
 */
 let x = null ?? "hello";
 console.log(x);
+
 let y = undefined ?? null ?? "world";
 console.log(y);
-let z = 0 ?? 2==3;
+
+let z = 0 ?? 2;
 console.log(z);
+
+let z1 = null ?? 2==3;
+console.log(z1);
