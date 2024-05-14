@@ -71,3 +71,20 @@ for (const key in map) {
     console.log("key");  // Though it will be compiled without giving any error but it will not show any result as "map" is not iteratable to for-in loop so w 
 }
 
+let arr = [1,2,3,4,5,6,7,8,9,10];
+function square (x){
+    return x*x;
+}
+
+const newarr = arr.map((x) => x*1);
+console.log(newarr);
+const squaredArr = arr.map(
+    (x) => square(x)
+);
+
+function isOdd  (x){
+    return x%2 !== 0;
+}
+const oddArr = arr.filter(isOdd);
+console.log(oddArr.replace(/,/g, ' ') );
+
